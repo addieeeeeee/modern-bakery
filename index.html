@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Сучасна Пекарня</title>
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
@@ -107,6 +107,7 @@
           <ul class="formats-list">
             <li class="format-item">
               <article class="format-card">
+                <img class="format-image" src="./img/walrus-format.jpg" alt="Walrus format">
                 <h3 class="format-title" lang="en">Walrus</h3>
                 <div class="format-text">
                   <p>Площа: до 120 м2</p>
@@ -118,6 +119,7 @@
             </li>
             <li class="format-item">
               <article class="format-card">
+                <img class="format-image" src="./img/horseshoe-format.jpg" alt="Horseshoe format">
                 <h3 class="format-title" lang="en">Horseshoe</h3>
                 <div class="format-text">
                   <p>Площа: до 25 м2</p>
@@ -129,6 +131,7 @@
             </li>
             <li class="format-item">
               <article class="format-card">
+                <img class="format-image" src="./img/handlebar-format.jpg" alt="Handlebar format">
                 <h3 class="format-title" lang="en">Handlebar</h3>
                 <div class="format-text">
                   <p>Площа: до 15 м2</p>
@@ -233,18 +236,21 @@
   <div class="backdrop is-hidden">
     <div class="modal">
       <button class="modal-btn-close" type="button">Close</button>
-      <form name="modal-form" autocomplete="on" novalidate>
+      <form name="modal-form" autocomplete="on">
         <h2 class="modal-title">Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <div class="form-field"><label class="form-label visually-hidden" for="user-name">Ім'я</label>
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-name">Ім'я</label>
           <input class="form-input" type="text" id="user-name" name="user-name" required placeholder="Ім'я" />
         </div>
 
-        <div class="form-field"><label class="form-label visually-hidden" for="user-tell">Телефон</label>
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-tell">Телефон</label>
           <input class="form-input" type="tel" id="user-tel" name="user-tel" required placeholder="Телефон" />
         </div>
 
-        <div class="form-field"><label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
           <input class="form-input" type="email" id="user-email" name="user-email" required
             placeholder="Електронна пошта" />
         </div>
